@@ -5,6 +5,7 @@ const longoBt = document.querySelector('.app__card-button--longo');
 const banner = document.querySelector('.app__image');
 const titulo = document.querySelector('.app__title');
 const botoes = document.querySelectorAll('.app__card-button');
+const rolarScroll = document.querySelector('.app__section-card-container');
 const startPauseBt = document.querySelector('#start-pause');
 const iniciarOuPausarBt = document.querySelector('#start-pause span');
 const musicaFocoInput = document.querySelector('#alternar-musica');
@@ -53,6 +54,7 @@ function alterarContexto(contexto) {
     })
     html.setAttribute('data-contexto', contexto);
     banner.setAttribute('src', `./imagens/${contexto}.png`);
+    rolarScroll.scrollIntoView({behavior: 'smooth'});
     switch (contexto) {
         case "foco":
             titulo.innerHTML = `

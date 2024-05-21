@@ -73,6 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 .app__section-card-container {
     display: flex;
     justify-content: center;
+    margin-top: -50px;
 }
 
 .app__card {
